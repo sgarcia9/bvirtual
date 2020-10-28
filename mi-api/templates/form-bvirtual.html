@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form bvirtual</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/functions.js"></script>
+  </head>
+  <body>
+    <div class="container-general">
+        <div class="container-bvirtual">
+            <form action="/" method="post" id="form-bvirtual" name="form-bvirtual" onsubmit="return validateForm()">
+                <div class="form-info">
+                    <img src="/img/logo.png" alt="Logo">
+                    <p>Por favor, rellena los campos siguientes:</p>
+                </div>
+                <div class="form-input">
+                    <div class="options first">
+                        <input class="nombre" type="text" placeholder="Nombre" name="nombre" id="nombre"/>
+                        <p id="error-nombre" class="error"></p>
+                    </div>
+                    <div class="options last">
+                        <input class="apellidos" type="text" placeholder="Apellidos" name="apellidos" id="apellidos"/>
+                        <p id="error-apellidos" class="error"></p>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="options first">
+                        <input class="email" type="email" placeholder="Email" name="email" id="email"/>
+                        <p id="error-email" class="error"></p>
+                    </div> 
+                    <div class="options last">
+                        <input class="repeat-email" type="email" placeholder="Repetir email" name="repeat-email" id="repeat-email"/>
+                        <p id="error-repeat-email" class="error"></p>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <div class="options first">
+                        <input class="dni" type="text" placeholder="Dni" name="dni" id="dni"/>
+                        <p id="error-dni" class="error"></p>
+                    </div>
+                    <div class="options last">
+                        <input class="movil" type="text" placeholder="Movil" name="movil" id="movil"/>
+                        <p id="error-movil" class="error"></p>
+                    </div>
+                </div>
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+        </div>
+    </div>
+  </body>
+</html>
